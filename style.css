@@ -1,0 +1,94 @@
+.Info{
+    display: flex;
+    gap: 60px;
+    width: max-content;
+    margin: auto;
+}
+@font-face {
+	font-family: 'Fallout'; 
+	src: url('./fallout.ttf'); 
+}
+h1{
+    font-family: Fallout;
+    width: max-content;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+span{
+    font-family: Fallout;
+
+}
+p{
+    font-family: Fallout;
+
+}
+.InfoText{
+    width: 400px;
+}
+body{
+    margin: 0;
+    display: flex;
+    /* background-color: black; */
+}
+main{
+    background-repeat: no-repeat;
+    width: max-content;
+    margin: 0 auto;
+    background-size: cover;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: max-content;
+    color:greenyellow;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+    position: relative;
+    margin-left: 40px;
+}
+aside > span{
+    color:greenyellow
+}
+
+aside::before,
+aside::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/backaside3.png');
+  background-size: cover;
+  z-index: -1;
+}
+
+aside::before {
+  /* transform: translateY(-10px); Сдвиг вверх для верхней границы */
+  transform: translateX(-40px); /* Сдвиг вверх для верхней границы */
+}
+
+aside::after {
+  /* transform: translateY(10px); Сдвиг вниз для нижней границы */
+  transform: translateX(40px) scaleX(-1); /* Сдвиг вверх для верхней границы */
+
+}
+.Info > img{
+    filter: grayscale(0%) sepia(100%) saturate(1000%) hue-rotate(120deg);
+}
+
+body {
+    /* background-image: url('./img/back5.png'); 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; */
+    /* background-size: cover; */
+
+    background-color: black;
+    /* background: rgb(0,36,10);
+background: linear-gradient(90deg, rgba(0,36,10,1) 0%, rgba(9,121,22,1) 55%, rgba(35,171,83,1) 100%); */
+/* background: rgb(102,103,2);
+background: linear-gradient(90deg, rgba(102,103,2,1) 0%, rgba(227,204,0,1) 55%, rgba(255,252,0,1) 100%); */
+   }
